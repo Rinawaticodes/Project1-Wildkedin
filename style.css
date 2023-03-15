@@ -40,7 +40,6 @@ body {
 
   .bloc-container {
     display: grid;
-    
     grid-template-columns: 1fr 4fr;
     text-align: center;
     height: 400px;
@@ -83,6 +82,12 @@ body {
     position: absolute;
     top: -30px;
 }
+
+.hexagon-inner i {
+  margin: 1rem;
+  padding: 1rem;
+}
+
 .hexagon:after {
     content: "";
     width: 0;
