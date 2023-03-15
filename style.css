@@ -33,7 +33,7 @@ body {
 .hexagon {
     margin-top: 70px;
     width: 340px;
-    height: 200px;
+    height: auto;
     background-color: #FFC75F;
     border-color: #bf4904;
     position: relative;
