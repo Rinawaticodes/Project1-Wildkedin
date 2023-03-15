@@ -22,12 +22,38 @@ body {
 }
 
 */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /*  Body  */
 @media all and (max-width: 600px) {
   .body {
     display: none;
     }
+  }
+  .body{
+    display: grid;
+  }
+
+  .bloc-container {
+    display: grid;
+    
+    grid-template-columns: 1fr 4fr;
+    text-align: center;
+    height: 400px;
+    border: 1px solid black;
+    grid-gap: 10px;
+
+  }
+  .bloc-profils {
+    padding: 0.5em;
+    background-color: peru;
+    border: 2px solid red;
+  }
+  .profil{
+    border: 1px solid black;
   }
 
 .hexagon {
