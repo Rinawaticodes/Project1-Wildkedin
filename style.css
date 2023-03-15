@@ -118,6 +118,7 @@ body {
   margin-left: 20px;
 }
 
-.utilisateurs {
-  text-align: center;
+.hexagon-sec {
+  display: flex;
+  justify-content: center;
 }
