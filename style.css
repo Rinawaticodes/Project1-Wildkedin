@@ -32,10 +32,11 @@ body {
   .body {
     display: none;
     }
+    .bloc-profils{
+      display: none;
+    }
   }
-  .body{
-    display: grid;
-  }
+  
 
   .bloc-container {
     display: grid;
