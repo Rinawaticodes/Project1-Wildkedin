@@ -22,6 +22,10 @@ body {
 }
 
 */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /*  Body  */
 @media all and (max-width: 600px) {
@@ -54,20 +58,22 @@ body {
 
 .hexagon {
     margin-top: 70px;
-    width: 200px;
-    height: 60px;
+    width: 340px;
+    height: 200px;
     background-color: #FFC75F;
     border-color: #bf4904;
     position: relative;
     display: inline-block;
+    display: flex;
+    justify-content: center;
 }
 .hexagon:before {
     content: " ";
     width: 0; height: 0;
     border-bottom: 30px solid;
     border-color: #FFC75F;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
     position: absolute;
     top: -30px;
 }
@@ -78,7 +84,16 @@ body {
     bottom: -30px;
     border-top: 30px solid;
     border-color: #FFC75F;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
+    border-left: 170px solid transparent;
+    border-right: 170px solid transparent;
 }
 
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.comment {
+  text-align: center;
+}
