@@ -22,6 +22,10 @@ body {
 }
 
 */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /*  Body  */
 @media all and (max-width: 600px) {
