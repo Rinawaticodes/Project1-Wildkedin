@@ -57,6 +57,10 @@ body {
     border: 1px solid black;
   }
 
+
+
+  /* ne pas toucher */
+
 .hexagon {
     margin-top: 70px;
     width: 340px;
@@ -67,6 +71,7 @@ body {
     display: inline-block;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .hexagon:before {
     content: " ";
@@ -99,6 +104,9 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 .comment {
@@ -109,4 +117,7 @@ body {
   margin-top: 50px;
   margin-left: 20px;
 }
+
+.utilisateurs {
+  text-align: center;
 }
