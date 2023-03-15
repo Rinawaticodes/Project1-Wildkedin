@@ -1,0 +1,24 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    --first-color: #FFC75F;
+    --border-color: #bf4904;
+    --three-color: #f37335;
+    --text-color-light: hsl(207, 4%, 56%);
+
+    /* =========  Autre ======== */
+
+}
+
+/* Exemple declaration
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+*/
