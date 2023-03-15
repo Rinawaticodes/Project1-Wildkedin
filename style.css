@@ -56,6 +56,10 @@ body {
     border: 1px solid black;
   }
 
+
+
+  /* ne pas toucher */
+
 .hexagon {
     margin-top: 70px;
     width: 340px;
@@ -105,4 +109,8 @@ body {
 #icone {
   margin-top: 50px;
   margin-left: 20px;
+}
+
+.utilisateurs {
+  text-align: center;
 }
