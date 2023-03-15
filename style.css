@@ -77,6 +77,12 @@ body {
     position: absolute;
     top: -30px;
 }
+
+.hexagon-inner i {
+  margin: 1rem;
+  padding: 1rem;
+}
+
 .hexagon:after {
     content: "";
     width: 0;
