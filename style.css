@@ -1,16 +1,15 @@
 /*=============== VARIABLES CSS ===============*/
+
 :root {
     --header-height: 3.5rem;
-  
     /*========== Colors ==========*/
     --first-color: #FFC75F;
     --border-color: #bf4904;
     --three-color: #f37335;
     --text-color-light: hsl(207, 4%, 56%);
-
     /* =========  Autre ======== */
-
 }
+
 
 /* Exemple declaration
 
@@ -20,4 +19,34 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }*/
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+
 /*NAVBAR*/
+
+
+/*START BOTTOM NAVBAR*/
+
+.bottom-navbar {}
+
+.bottom-navbar li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.bottom-navbar ul {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.bottom-navbar a:hover {
+    background-color: gold;
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
