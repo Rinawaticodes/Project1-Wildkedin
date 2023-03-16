@@ -28,34 +28,8 @@ body {
 }
 
 /*  Body  */
-@media all and (max-width: 600px) {
-  .body {
-    display: none;
-    }
-    .bloc-profils{
-      display: none;
-    }
-  }
+
   
-
-  .bloc-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    text-align: center;
-    height: 400px;
-    border: 1px solid black;
-    grid-gap: 10px;
-
-  }
-  .bloc-profils {
-    padding: 0.5em;
-    background-color: peru;
-    border: 2px solid red;
-  }
-  .profil{
-    border: 1px solid black;
-  }
-
 
 
   /* ne pas toucher */
@@ -112,12 +86,6 @@ p {
   text-align: center;
 }
 
-#icone {
-  margin-top: 50px;
-  margin-left: 20px;
-  color: #bf4904;
-}
-
 .hexagon-sec {
   display: flex;
   justify-content: center;
@@ -127,3 +95,20 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+.utilisateurs {
+      display: flex;
+      flex-direction: column;
+}
+
+@media all and (min-width: 600px) {
+ 
+    
+    .utilisateurs {
+      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(5, auto);
+      gap: 2em;
+    }
+  }
