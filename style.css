@@ -28,16 +28,9 @@ body {
 }
 
 /*  Body  */
-@media all and (max-width: 600px) {
-  .body {
-    display: none;
-    }
-    .bloc-profils{
-      display: none;
-    }
-  }
-  
 
+  
+/* test un*/
   .bloc-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -49,41 +42,69 @@ body {
   .bloc-profils {
     padding: 0.5em;
     /*background-color: #FFC75F;*/
+    display: none;
     border: 2px solid red;
   }
-  .profil{
-    border: 1px solid black;
-    background-color: #FFC75F;
-  }
-  .card {
-    border: 1px solid black;
-    border-radius: 1rem;
-    display: grid;
-    justify-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    margin: 1rem;
-    margin-left: 25%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    background-color: #FFC75F;
-    
-  }
   
-  .card-image {
-    border-radius: 50%;
-    width: 50%;
-    height: auto;
-  }
-  
-  .card-legend {
-    text-align: center;
-  }
-  
-  .card-title {
-    font-size: initial;
-    margin-bottom: 1rem;
-  }
+
+  /*test 2*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #FFC75F;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: linear-gradient(#F37335, #FFC75F);;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+
+
+
+  @media all and (min-width: 600px) {
+    .body {
+      display: none;
+      }
+      .bloc-profils{
+        display: grid;
+      }
+    }
 
   /* ne pas toucher */
 
