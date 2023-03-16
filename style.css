@@ -108,7 +108,7 @@ body {
   margin-bottom: 25px;
 }
 
-.comment {
+p {
   text-align: center;
 }
 
@@ -119,6 +119,11 @@ body {
 }
 
 .hexagon-sec {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
   display: flex;
   justify-content: center;
 }
