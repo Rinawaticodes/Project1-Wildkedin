@@ -25,6 +25,16 @@ body {
                                         list-style: none;
                                         font-family: 'Montserrat Classic', sans-serif;
                                     }
+                                    
+                                    body {
+                                        min-height: 100vh;
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    
+                                    main {
+                                        flex-grow: 1;
+                                    }
                                     /*NAVBAR HAUT*/
                                     
                                     .nav-top {
@@ -190,16 +200,21 @@ body {
                                     }
                                     /*  START BOTTOM NAVBAR ADLAN   */
                                     
+                                    .wrapper {
+                                        position: sticky;
+                                        top: 0;
+                                    }
+                                    
                                     .nav {
                                         border: 1px solid #f37335;
-                                        position: fixed;
-                                        bottom: 0;
-                                        width: 100%;
-                                        height: 55px;
                                         box-shadow: 00 3px rgba(0, 0, 0, 0.2);
                                         background-color: #ffffff;
                                         overflow-x: auto;
                                         display: flex;
+                                        padding: 1rem;
+                                        order: 1;
+                                        position: sticky;
+                                        bottom: 0;
                                     }
                                     
                                     .nav-link {
@@ -239,5 +254,8 @@ body {
                                         }
                                         .btn img {
                                             width: 4rem;
+                                        }
+                                        .nav {
+                                            order: initial;
                                         }
                                     }
