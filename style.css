@@ -95,6 +95,7 @@ body {
   display: none;
 }
 
+
 /*NAVBAR ADLAN*/
 .nav {
     border: 1px solid #f37335;
@@ -141,7 +142,7 @@ body {
 @media all and (min-width: 600px){
   .sub-menu {
     right: 1rem;
-    top: 80px;
+    top: 70px;
   }
   .btn img{
     width: 4rem;
