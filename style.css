@@ -56,7 +56,7 @@ body {
     top: -30px;
 }
 
-.hexagon-inner i {
+.hexagon-inner, i {
   margin: 1rem;
   padding: 1rem;
 }
