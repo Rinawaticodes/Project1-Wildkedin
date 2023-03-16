@@ -116,3 +116,10 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* =======  Button ===== */
+
+.compteur {
+  background: none;
+  border: none;
+}
