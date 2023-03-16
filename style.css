@@ -42,12 +42,12 @@ body {
   .bloc-profils {
     padding: 0.5em;
     /*background-color: #FFC75F;*/
-    display: none;
-    border: 2px solid red;
+    display:none;
+    border: 1px solid red;
   }
   
 
-  /*test 2*/
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
@@ -94,6 +94,10 @@ body {
   transform: rotateY(180deg);
 }
 
+.flip-card-front-img {
+  width: 100%;
+  height: 100%;
+}
 
 
 
@@ -102,7 +106,7 @@ body {
       display: none;
       }
       .bloc-profils{
-        display: grid;
+        display: block;
       }
     }
 
