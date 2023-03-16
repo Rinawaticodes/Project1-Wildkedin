@@ -5,25 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <!--HEADER-->
-    <!--navbar rina-->
-    <div class="container">
-        <nav class="navbar">
-            <img src="logo.png" alt="" class="logo">
-            <div class="search"></div>
-            <!--menu burger-->
-            <ul>
-                <li><a href="#">Parametre</a></li>
-                <li><a href="#">Confidental</a></li>
-            </ul>
-        </nav>
-    </div>
+    <!--HEADER--><!--navbar Rina-->
+    <nav class="nav">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+        <label for="nav__checkbox" class="nav_toggle">
+            <img src="./asset/burger-menu-svgrepo-com.svg" alt="menu-burger" class="menu-burger">
+            <img src="./asset/close-svgrepo-com.svg" alt="close" class="close">
+        </label>
+        <!--Bar search-->
+        <!--<div class="container">
+            <form action="">
+                <input type="text" placeholder="search" id="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>-->
+        <ul class="nav_menu">
+            <li><a href="#">WILD'KEDIN</a></li>
+            <li><a href="#">Parametre</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign out</a></li>
+        </ul>
+    </nav>
+      
     <!--navbar adlan-->
-    <footer>hello la team</footer>
 
 <script type="text/javascript" src="index.js"></script>
 </body>
