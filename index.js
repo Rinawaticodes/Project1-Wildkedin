@@ -1,5 +1,7 @@
-const submain = document.querySelector(".sub-main");
+const toggleMenuBtn = document.querySelector(".btn");
+const subMenu = document.querySelector(".sub-menu");
+
     
-submain.addEventListener("click", function(){
-    this.classList.toggle("active");
+toggleMenuBtn.addEventListener("click", function(){
+    subMenu.classList.toggle("active");
 })
