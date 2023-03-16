@@ -30,10 +30,11 @@ body {
 /*NAVBAR*/
 
 
-/*START BOTTOM NAVBAR*/
+/*  START BOTTOM NAVBAR*/
 
 .nav {
     border: 1px solid #f37335;
+    border-radius: 0.5rem;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -58,7 +59,7 @@ body {
     color: #000000;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .nav-link:hover {
@@ -71,4 +72,16 @@ body {
 
 .nav-icon {
     font-size: 16px;
+}
+
+
+/*  END BOTTOM NAVBAR*/
+
+@media all and (min-width: 600px) {
+    .body {
+        display: none;
+    }
+    .bloc-profils {
+        display: grid;
+    }
 }
