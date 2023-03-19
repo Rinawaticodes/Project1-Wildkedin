@@ -214,17 +214,7 @@ h2 {
       display: flex;
       flex-direction: column;
 }
-
-@media all and (min-width: 600px) {
-    .utilisateurs {
-      flex-direction: row;
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      grid-template-rows: repeat(5, auto);
-      gap: 2em;
-    }
-  }
-                                    
+                                   
 body {
     min-height: 100vh;
     display: flex;
@@ -234,10 +224,7 @@ body {
 main {
     flex-grow: 1;
 }
-/*NAVBAR HAUT*/
-
-
-                                    
+/*NAVBAR HAUT*/                                  
 .nav-top {
     background: #FDC830;
     width: 100%;
@@ -314,15 +301,8 @@ main {
     display: none;
 }
 
-@media all and (min-width: 600px) {
-    .nav {
-        display: none;
-    }
-    .sub-menu {
-        right: 1rem;
-        top: 100px;
-    }
-}
+
+
 /*  START BOTTOM NAVBAR ADLAN   */
 
 .wrapper {
@@ -342,6 +322,20 @@ main {
     position: sticky;
     bottom: 0;
     z-index: 20;
+}
+
+.nav-desk {
+  border: 1px solid #f37335;
+  box-shadow: 00 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  overflow-x: auto;
+  display: flex;
+  padding: 1rem;
+  order: 1;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  display: none;
 }
 
 .nav-link {
@@ -383,6 +377,18 @@ main {
         width: 4rem;
     }
     .nav {
-        order: initial;
+        /*order: initial;*/
+        display: none;
+        
+    }
+    .nav-desk{
+      display:flex;
+    }
+    .utilisateurs {
+      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: repeat(5, auto);
+      gap: 2em;
     }
 }
