@@ -34,7 +34,6 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 4rem;
-  margin-right: 1rem;
 }
 .nav-text{
   font-size: 600;
@@ -450,7 +449,6 @@ main {
   border: 1px solid #f37335;
   box-shadow: 00 3px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
-  overflow-x: auto;
   display: flex;
   padding: 1rem;
   order: 1;
