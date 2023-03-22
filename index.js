@@ -29,10 +29,12 @@ for (let i = 0; i < buttons.length; i++) {
 /* Import des Wilders */
 
 class Wilder {
-  constructor(name, desc, img) {
+  constructor(name, desc, img, git, link) {
     this.name = name;
     this.desc = desc;
     this.img = img;
+    this.git = git;
+    this.link = link;
   }
 }
 
@@ -41,13 +43,64 @@ const wilderList = [
     "Julien Benoit",  
     "C'est un métier qui peut être très bien payé.",
     "resources/Julien.jpg",
-  
+    "www.github.com",
+    "www.linkedin.com",
   ),
   new Wilder(
     "Alexandre O",
     "j'ai choisi le métier de développeur car c'est un métier que je peux faire avec mes handicaps et que la technologie ma passionne sous tous les angles",
     "resources/Alexandre.jpg",
     
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
   ),
   new Wilder(
     "Flavien Jovic",   
