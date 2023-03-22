@@ -91,7 +91,7 @@ const wilderList = [
   new Wilder(
     "Alexandre Pompidou",  
     " Je veux faire ce métier par passions.",
-    "resources/promoWilder/AlexandreP.jpeg",
+    "resources/promoWilder/ALexandreP.jpeg",
     "https://github.com/Alex-5110",
     "https://www.linkedin.com/in/alexandre-pompidou-13a467223/",
   
