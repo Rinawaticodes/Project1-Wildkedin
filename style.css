@@ -110,14 +110,15 @@
 .modal-content {
   position: fixed;
   left: 50%;
+  bottom: 20%;
   transform: translateX(-50%);
   z-index: 999;
-  font-size: 4em;
+  font-size: 2em;
   animation-name: fadein;
   animation-duration: 300ms;
   animation-timing-function: ease-in-out;
-  border: 1px solid #d1d5da;
-  border-radius: 3px;
+  border: 2px solid #d1d5da;
+  border-radius: 10%;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
   background-color: white;
   padding: 1rem;
