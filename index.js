@@ -144,6 +144,10 @@ function createHexagone(wilder) {
         <div class="modal-content">
           <h1>${wilder.name}</h1>
           <p>${wilder.desc}</p>
+          <div class="favIcon">
+          <a href="${wilder.git}"><i class="fa-brands fa-github"></i></a>
+          <a href="${wilder.link}"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
         </div>
       </details>
     </li>

@@ -117,11 +117,20 @@
   animation-name: fadein;
   animation-duration: 300ms;
   animation-timing-function: ease-in-out;
-  border: 2px solid #d1d5da;
-  border-radius: 10%;
+  border: 5px solid #d1d5da;
+  border-radius: 1%;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
   background-color: white;
   padding: 1rem;
+}
+
+.favIcon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.favIcon i {
+  color: #bf4904;
 }
 
 @keyframes fadein {
@@ -172,6 +181,13 @@
   }
   .hex:nth-child(9n+6){ /* first hexagon of even rows */
     margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+  .favIcon {
+    display: flex;
+    justify-content: space-between;
+  }
+  .favIcon i {
+    color: #bf4904;
   }
 }
 
