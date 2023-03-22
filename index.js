@@ -67,7 +67,7 @@ const wilderList = [
   ),
   new Wilder(
     "Flavien Jovic",   
-    "C'est un métier qui peut être très bien payé.",
+    "Je souhaite me réorienter vers le développement web afin de trouver un travail éthique et stimulant intellectuellement.",
     "resources/promoWilder/Flavien.jpeg",
     "https://github.com/FlavienJovic",
     "https://www.linkedin.com/in/flavien-jovic-4348681b2/",
