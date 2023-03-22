@@ -94,4 +94,4 @@ document.querySelector(".search-input")?.addEventListener("change", () => {
   document.querySelector(".hexagones").innerHTML = createAllHexagones(filter);
 });
 
-document.querySelector(".hexagones").innerHTML = createAllHexagones();s
+document.querySelector(".hexagones").innerHTML = createAllHexagones();
