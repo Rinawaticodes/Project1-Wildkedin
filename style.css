@@ -7,19 +7,232 @@
   --border-color: #bf4904;
   --three-color: #f37335;
   --text-color-light: hsl(207, 4%, 56%);
-  
+
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Montserrat Classic', sans-serif;
+}
+
 /*  Body  */
 
-/*NAVBAR HAUT*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Montserrat Classic', sans-serif;
+  
+/* Hexagone*/
+  
+  
+/*#hexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000%;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+  padding: 1rem
+}*/
+
+#hexGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  font-family: 'Montserrat Classic', sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+  padding: 1rem;
 }
 
+.hex {
+  position: relative;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hex::after{
+  content:'';
+  display:block;
+  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+}
+.hexIn{
+  position: absolute;
+  width:96%;
+  padding-bottom: 110.851%; /* =  width / sin(60) */
+  margin:0 2%;
+  overflow: hidden;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+  -webkit-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+      -ms-transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+          transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+}
+.hexIn * {
+  position: absolute;
+  outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hexLink {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    -webkit-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+        -ms-transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+            transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+}
+
+.hexLink summary {
+  display: block;
+  height: 100%;
+}
+
+.modal-trigger {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.modal[open] > .modal-trigger::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  cursor: default;
+  content: '';
+  z-index: 99;
+  background: rgba(27,31,35,0.5);
+}
+
+.modal-content {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  font-size: 4em;
+  animation-name: fadein;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in-out;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+  background-color: white;
+  padding: 1rem;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.modal-trigger::-webkit-details-marker {
+  display:none;
+}
+
+
+/*** HEX CONTENT **********************************************************************/
+.hex img {
+  left: -100%;
+  right: -100%;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-transform: rotate3d(0,0,0,0deg);
+      -ms-transform: rotate3d(0,0,0,0deg);
+          transform: rotate3d(0,0,0,0deg);
+}
+
+.hex h1, .hex p {
+  box-sizing:border-box;
+  background-color: #FDC830;
+  font-weight: 300;
+  -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
+          transition:          transform .2s ease-out, opacity .3s ease-out;
+}
+
+/*** HOVER EFFECT  **********************************************************************/
+.hexLink:hover h1, .hexLink:focus h1,
+.hexLink:hover p, .hexLink:focus p{
+  -webkit-transform:translate3d(0,0,0);
+      -ms-transform:translate3d(0,0,0);
+          transform:translate3d(0,0,0);
+}
+
+/*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
+@media (min-width:1201px) { /* <- 5-4  hexagons per row */
+  #hexGrid{
+    padding-bottom: 4.4%
+  }
+  .hex {
+    width: 20%; /* = 100 / 5 */
+  }
+  .hex:nth-child(9n+6){ /* first hexagon of even rows */
+    margin-left:10%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
+  #hexGrid{
+    padding-bottom: 5.5%
+  }
+  .hex {
+    width: 25%; /* = 100 / 4 */
+  }
+  .hex:nth-child(7n+5){ /* first hexagon of even rows */
+    margin-left:12.5%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
+  #hexGrid{
+    padding-bottom: 7.4%
+  }
+  .hex {
+    width: 33.333%; /* = 100 / 3 */
+  }
+  .hex:nth-child(5n+4){ /* first hexagon of even rows */
+    margin-left:16.666%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 600px) { /* <- 2-1  hexagons per row */
+  #hexGrid{
+    padding-bottom: 11.2%
+  }
+  .hex {
+    width: 50%; /* = 100 / 3 */
+  }
+  .hex:nth-child(3n+3){ /* first hexagon of even rows */
+    margin-left:25%;  /* = width of .hex / 2  to indent even rows */
+  }
+}
+
+@media (max-width: 400px) {
+    #hexGrid {
+        font-size: 13px;
+    }
+}
+
+/* =======  Button ===== */
+
+.compteur {
+  background: none;
+  border: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.utilisateurs {
+      display: flex;
+      flex-direction: column;
+}
+                                   
 body {
     min-height: 100vh;
     display: flex;
@@ -29,23 +242,21 @@ body {
 main {
     flex-grow: 1;
 }
-                                
+/*NAVBAR HAUT*/                                  
 .nav-top {
-  background: #FDC830;
-  width: 100%;
-  height: 6vh;
+    background: #FDC830;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1rem;
-  }
-  
-  .nav-top .logo a {
+}
+
+.nav-top .logo a {
     display: block;
     text-decoration: none;
-  }
-  
-  .nav-droit>ul {
+}
+
+.nav-droit>ul {
     display: flex;
     align-items: center;
 }
@@ -66,7 +277,7 @@ main {
     position: absolute;
     right: 1rem;
     top: 70px;
-    display: none;
+    display: flex;
     background: #ffff;
     border-radius: 15px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
@@ -102,25 +313,17 @@ main {
 }
 
 .active {
-  
-    display: flex;
+    display: none;
 }
 
-@media all and (min-width: 600px) {
-    .nav {
-        display: none;
-    }
-    .sub-menu {
-        right: 1rem;
-        top: 100px;
-    }
-}
+
+
 /*  START BOTTOM NAVBAR ADLAN   */
 
 .wrapper {
-  z-index: 20;
-  position: sticky;
-  top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 20;
 }
 
 .nav {
@@ -133,6 +336,21 @@ main {
     order: 1;
     position: sticky;
     bottom: 0;
+    z-index: 20;
+}
+
+.nav-desk {
+  border: 1px solid #f37335;
+  box-shadow: 00 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  overflow-x: auto;
+  display: flex;
+  padding: 1rem;
+  order: 1;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  display: none;
 }
 
 .nav-link {
@@ -174,167 +392,13 @@ main {
         width: 4rem;
     }
     .nav {
-        order: initial;
+        /*order: initial;*/
+        display: none;
+        
     }
-}
-
-/* test un*/
-.bloc-container {
-  display: grid;
-    grid-template-columns: 1fr 4fr;
-    text-align: center;
-    height: 400px;
-    grid-gap: 10px;
-
-  }
-  .bloc-profils {
-    padding: 0.5em;
-    /*background-color: #FFC75F;*/
-    display:none;
-  }
-  
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid black;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #FFC75F;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background: linear-gradient(#F37335, #FFC75F);;
-  color: black;
-  transform: rotateY(180deg);
-}
-
-.flip-card-front-img {
-  width: 100%;
-  height: 100%;
-}
-
-  @media all and (min-width: 600px) {
-    .body {
-      display: none;
-      }
-      .bloc-profils{
-        display: block;
-      }
+    .nav-desk{
+      display:flex;
     }
-
-  /* ne pas toucher */
-
-.hexagon {
-    margin-top: 70px;
-    width: 340px;
-    height: auto;
-    background: #FFC75F;
-    position: relative;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #bf4904;
-}
-.hexagon:before {
-    content: " ";
-    width: 0; height: 0;
-    border-bottom: 30px solid;
-    border-color: #FFC75F;
-    border-left: 170px solid transparent;
-    border-right: 170px solid transparent;
-    position: absolute;
-    top: -30px;
-}
-
-.hexagon-inner, i {
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.hexagon:after {
-    content: "";
-    width: 0;
-    position: absolute;
-    bottom: -30px;
-    border-top: 30px solid;
-    border-color: #FFC75F;
-    border-left: 170px solid transparent;
-    border-right: 170px solid transparent;
-}
-
-.img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  margin-bottom: 25px;
-}
-
-p {
-  text-align: center;
-}
-
-.hexagon-sec {
-  display: flex;
-  justify-content: center;
-}
-
-
-/* =======  Button ===== */
-
-.compteur {
-  background: none;
-  border: none;
-}
-
-h2 {
-  display: flex;
-  justify-content: center;
-}
-
-.utilisateurs {
-      display: flex;
-      flex-direction: column;
-}
-
-@media all and (min-width: 600px) {
- 
-    
     .utilisateurs {
       flex-direction: row;
       display: grid;
@@ -342,4 +406,4 @@ h2 {
       grid-template-rows: repeat(5, auto);
       gap: 2em;
     }
-  }
+}
