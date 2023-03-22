@@ -61,50 +61,51 @@ const wilderList = [
     "resources/Flavien.jpg"
   ),
   new Wilder(
-    "Flavien Jovic",   
+    "Marc",   
     "C'est un métier qui peut être très bien payé.",
     "resources/Flavien.jpg"
   ),
   new Wilder(
-    "Flavien Jovic",   
+    "Jovic",   
     "C'est un métier qui peut être très bien payé.",
     "resources/Flavien.jpg"
   ),
   new Wilder(
-    "Flavien Jovic",   
+    "Flavien",   
     "C'est un métier qui peut être très bien payé.",
     "resources/Flavien.jpg"
   )
 ];
 
-function createHexagone(wilder) {
-  // This function should create a card item
-  return `
+  function createHexagone(wilder) {
+    // This function should create a card item
+    return `
     <li class="hex">
-      <details class="modal">
-        <summary class="modal-trigger">
-          <div class="hexIn">
-            <div class="hexLink">
-              <img src=${wilder.img} alt="" />
-            </div>
-          </div>
-        </summary>
-        <div class="modal-content">
-          <h1>${wilder.name}</h1>
-          <p>${wilder.desc}</p>
-        <div class="favIcon">
-          <a href="${wilder.git}"><i class="fa-brands fa-github"></i></a>
-          <a href="${wilder.link}"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
-        </div>
-      </details>
+    <details class="modal">
+    <summary class="modal-trigger">
+    <div class="hexIn">
+    <div class="hexLink">
+    <img src=${wilder.img} alt="" />
+    </div>
+    </div>
+    </summary>
+    <div class="modal-content">
+    <h1>${wilder.name}</h1>
+    <p>${wilder.desc}</p>
+    <div class="favIcon">
+    <a href="${wilder.git}"><i class="fa-brands fa-github"></i></a>
+    <a href="${wilder.link}"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    </div>
+    </details>
     </li>
   `;
 }
 
 function createAllHexagones(filter) {
+  wilderList.sort((a, b) => 0.5-Math.random()) ;
   let hexagones = "";
-
+  
   for (let i = 0; i < wilderList.length; i++) {
     if (filter == null || wilderList[i].name.startsWith(filter)) {
       hexagones += createHexagone(wilderList[i]);
