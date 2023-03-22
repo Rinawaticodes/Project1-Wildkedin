@@ -117,13 +117,16 @@
   animation-name: fadein;
   animation-duration: 300ms;
   animation-timing-function: ease-in-out;
-  border: 5px solid #d1d5da;
-  border-radius: 1%;
+  border: 5px solid #f37335;
+  border-radius: 10%;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-  background-color: white;
+  background-color: #FDC830;
   padding: 1rem;
 }
 
+.hex h1, p {
+  border-radius: 40%;
+}
 .favIcon {
   display: flex;
   justify-content: space-between;
