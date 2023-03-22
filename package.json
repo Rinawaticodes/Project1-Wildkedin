@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "w3c-html-validator": "^1.3.2"
+    "w3c-html-validator": "^1.3.3"
   }
 }

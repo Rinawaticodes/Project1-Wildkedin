@@ -1,3 +1,4 @@
+
 /*  Body */
 
 /* Navbar */
@@ -10,6 +11,15 @@ toggleMenuBtn?.addEventListener("click", function(){
 })
 
 
+
+let popup = document.getElementById("popup");
+
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
 /*  Button */
 
 const buttons = document.getElementsByClassName('compteur');
@@ -23,6 +33,7 @@ for (let i = 0; i < buttons.length; i++) {
         compteurs.value++
       })
     }
+
 
 
 
@@ -101,3 +112,5 @@ document.querySelector(".search-input")?.addEventListener("change", () => {
 });
 
 document.querySelector(".hexagones").innerHTML = createAllHexagones();
+
+
