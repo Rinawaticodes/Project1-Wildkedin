@@ -1,15 +1,13 @@
-/*  Body */
+/*BUTTON POPUP*/
 
-/* Navbar */
-const toggleMenuBtn = document.querySelector(".btn");
-const subMenu = document.querySelector(".sub-menu");
+let popup = document.getElementById("popup");
 
-    
-toggleMenuBtn.addEventListener("click", function(){
-    subMenu.classList.toggle("active");
-})
-
-
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
 /*  Button */
 
 const buttons = document.getElementsByClassName('compteur');
@@ -23,3 +21,4 @@ for (let i = 0; i < buttons.length; i++) {
         compteurs.value++
       })
     }
+
