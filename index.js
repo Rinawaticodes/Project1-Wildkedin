@@ -29,10 +29,12 @@ for (let i = 0; i < buttons.length; i++) {
 /* Import des Wilders */
 
 class Wilder {
-  constructor(name, desc, img) {
+  constructor(name, desc, img, git, link) {
     this.name = name;
     this.desc = desc;
     this.img = img;
+    this.git = git;
+    this.link = link;
   }
 }
 
@@ -41,13 +43,32 @@ const wilderList = [
     "Julien Benoit",  
     "C'est un métier qui peut être très bien payé.",
     "resources/Julien.jpg",
+    "https://github.com/tetsuya51",
+    "https://www.linkedin.com/in/christophe-dubois-217452186/",
   
   ),
   new Wilder(
     "Alexandre O",
     "j'ai choisi le métier de développeur car c'est un métier que je peux faire avec mes handicaps et que la technologie ma passionne sous tous les angles",
     "resources/Alexandre.jpg",
+    "https://github.com/tetsuya51",
+    "https://www.linkedin.com/in/christophe-dubois-217452186/",
     
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Flavien Jovic",   
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Flavien.jpg"
   ),
   new Wilder(
     "Flavien Jovic",   
@@ -71,6 +92,10 @@ function createHexagone(wilder) {
         <div class="modal-content">
           <h1>${wilder.name}</h1>
           <p>${wilder.desc}</p>
+        <div class="favIcon">
+          <a href="${wilder.git}"><i class="fa-brands fa-github"></i></a>
+          <a href="${wilder.link}"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
         </div>
       </details>
     </li>
