@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-                                                    list-style: none;
+  list-style: none;            
   font-family: 'Montserrat Classic', sans-serif;
 }
 
@@ -29,6 +29,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .navbar_logo {
   position: fixed;
@@ -51,7 +52,7 @@ nav {
   font-size: 30px;
 }
 
-ul {
+.navbar_menu {
   display: flex;
   justify-content: space-around;
   height: 100%;
@@ -59,20 +60,20 @@ ul {
   max-width: 800px;
   text-align: center;
 }
-ul li {
+.navbar_menu li {
   list-style: none;
   height: 100%;
   display: flex;
   align-items: center;
   font-size: 0.8rem;
 }
-ul li a, .btn {
+.navbar_menu li a, .btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
 }
-ul li img {
+.navbar_menu li img {
   text-align: center;
   width: 2rem;
 }
@@ -188,6 +189,7 @@ nav ul li:hover {
   font-size: 15px;
   list-style-type: none;
   padding: 1rem;
+  margin-top: 5em;
 }
 
 .hex {
