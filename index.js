@@ -1,17 +1,8 @@
 
 /*  Body */
 
-/* Navbar */
-const toggleMenuBtn = document.querySelector(".btn");
-const subMenu = document.querySelector(".sub-menu");
 
-    
-toggleMenuBtn?.addEventListener("click", function(){
-    subMenu.classList.toggle("active");
-})
-
-
-
+//rina popup start
 let popup = document.getElementById("popup");
 
         function openPopup(){
@@ -20,7 +11,8 @@ let popup = document.getElementById("popup");
         function closePopup(){
             popup.classList.remove("open-popup");
         }
-/*  Button */
+//rina popup end
+/*  Button
 
 const buttons = document.getElementsByClassName('compteur');
 
@@ -28,13 +20,13 @@ const compteurs = document.getElementById('nombreClics');
 
 for (let i = 0; i < buttons.length; i++) {
     console.log(i, buttons[i])
-	buttons[i].addEventListener('click', () => {
+  buttons[i].addEventListener('click', () => {
         buttons[i].style.color = '#f37335';
         compteurs.value++
       })
     }
 
-
+*/
 
 
 /* Import des Wilders */
@@ -48,6 +40,7 @@ class Wilder {
     this.link = link;
   }
 }
+
 const wilderList = [
   new Wilder(
     "Julien Benoit",  
@@ -226,32 +219,33 @@ const wilderList = [
   ),
 ];
 
-  function createHexagone(wilder) {
-    // This function should create a card item
-    return `
+function createHexagone(wilder) {
+  // This function should create a card item
+  return `
     <li class="hex">
-    <details class="modal">
-    <summary class="modal-trigger">
-    <div class="hexIn">
-    <div class="hexLink">
-    <img src=${wilder.img} alt="" />
-    </div>
-    </div>
-    </summary>
-    <div class="modal-content">
-    <h1>${wilder.name}</h1>
-    <p>${wilder.desc}</p>
-    <div class="favIcon">
-    <a href="${wilder.git}"><i class="fa-brands fa-github"></i></a>
-    <a href="${wilder.link}"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-    </div>
-    </details>
+      <details class="modal">
+        <summary class="modal-trigger">
+          <div class="hexIn">
+            <div class="hexLink">
+              <img src=${wilder.img} alt="" />
+            </div>
+          </div>
+        </summary>
+        <div class="modal-content">
+          <h1>${wilder.name} <img src=${wilder.img} alt="" /></h1>
+          <p>${wilder.desc}</p>
+          <div class="favIcon">
+            <a href="${wilder.git}"><i class="fa-brands fa-github"></i></a>
+            <a href="${wilder.link}"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </details>
     </li>
   `;
 }
 
 function createAllHexagones(filter) {
+
   wilderList.sort((a, b) => 0.5-Math.random()) ;
   let hexagones = "";
   
@@ -264,9 +258,13 @@ function createAllHexagones(filter) {
   return hexagones;
 }
 
+// adlan search start
+
 document.querySelector(".search-input")?.addEventListener("change", () => {
   const filter = document.querySelector(".search-input").value;
   document.querySelector(".hexagones").innerHTML = createAllHexagones(filter);
 });
 
 document.querySelector(".hexagones").innerHTML = createAllHexagones();
+
+// adlan search end
