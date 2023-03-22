@@ -1,6 +1,6 @@
 /*BUTTON POPUP*/
 
-let popup = document.getElementById("popup");
+const popup = document.getElementById("popup");
 
         function openPopup(){
             popup.classList.add("open-popup");
@@ -8,6 +8,7 @@ let popup = document.getElementById("popup");
         function closePopup(){
             popup.classList.remove("open-popup");
         }
+
 /*  Button */
 
 const buttons = document.getElementsByClassName('compteur');
