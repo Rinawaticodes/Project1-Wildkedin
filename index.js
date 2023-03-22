@@ -53,6 +53,12 @@ const wilderList = [
     "Flavien Jovic",   
     "C'est un métier qui peut être très bien payé.",
     "resources/Flavien.jpg"
+  ),
+  new Wilder(
+    "Julien Benoit",  
+    "C'est un métier qui peut être très bien payé.",
+    "resources/Julien.jpg",
+  
   )
 ];
 
