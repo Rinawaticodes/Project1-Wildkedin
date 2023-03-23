@@ -203,23 +203,34 @@ nav{
   animation-name: fadein;
   animation-duration: 300ms;
   animation-timing-function: ease-in-out;
-  border: 5px solid #f37335;
+  border: 5px solid #bf4904;
   border-radius: 10%;
   box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
-  background-color: #FDC830;
+  background-color: white;
   padding: 1rem;
 }
-
-.hex h1, p {
-  border-radius: 40%;
+.hex h1 {
+  background: linear-gradient(to bottom left, white 50%, #FDC830 50%);
+  border-radius: 10% 10% 0% 0%;
 }
+
+.hex p {
+  background: linear-gradient(to bottom left, #FDC830 50%, white 50%);
+}
+
+.fa-brands fa-linkedin {
+  color: #FDC830;
+}
+
 .favIcon {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(to bottom left, white 50%, #FDC830 50%);
+  border-radius: 0% 0% 10% 10%;
 }
 
 .favIcon i {
-  color: #bf4904;
+  color: white;
 }
 
 @keyframes fadein {
@@ -246,7 +257,6 @@ nav{
 
 .hex h1, .hex p {
   box-sizing:border-box;
-  background-color: #FDC830;
   font-weight: 300;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
           transition:          transform .2s ease-out, opacity .3s ease-out;
