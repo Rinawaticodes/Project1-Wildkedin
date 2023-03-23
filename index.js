@@ -250,7 +250,7 @@ function createAllHexagones(filter) {
   let hexagones = "";
   
   for (let i = 0; i < wilderList.length; i++) {
-    if (filter == null || wilderList[i].name.startsWith(filter)) {
+    if (filter == null || wilderList[i].desc.toLowerCase().includes(filter.toLowerCase())) {
       hexagones += createHexagone(wilderList[i]);
     }
   }
@@ -265,6 +265,5 @@ document.querySelector(".search-input")?.addEventListener("change", () => {
   document.querySelector(".hexagones").innerHTML = createAllHexagones(filter);
 });
 
-document.querySelector(".hexagones").innerHTML = createAllHexagones();
-
 // adlan search end
+document.querySelector(".hexagones").innerHTML = createAllHexagones();
