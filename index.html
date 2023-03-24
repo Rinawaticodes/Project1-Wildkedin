@@ -2,18 +2,16 @@
 <html lang="fr">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/
-    icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <title>Document</title>
+    <title>WILD'KEDIN</title>
 </head>
+
 <body>
     <!--navabar-->
     <!--navbar rina-->
@@ -21,53 +19,86 @@
     <div class="wrapper">
         <div class="nav-top">
             <div class="logo">
-                <a href="#"><img src="resources/icons/logoWILD.png" alt="logo"></a>
+                <a href="#"><img src="resources/logoWILD.png" alt="logo"></a>
             </div>         
         </div>
-     <!--navbar adlan-->
-        <nav class="nav-desk">
-          <a href="#" class="nav-link">
-              <img src="resources/icons/house-door.svg" alt="accueil">
-              <span class="nav-text">Accueil</span>
-          </a>
-          <a href="#" class="nav-link">
-              <img src="resources/icons/search.svg" alt="profil">
-              <span class="material-icons-outlined">Rechercher</span> </a>
-          <a href="#" class="nav-link">
-              <img src="resources/icons/plus-lg.svg" alt="ajouter">
-              <span class="nav-text">Offres d'emploi</span>
-          </a>
-          <a href="#" class="nav-link">
-              <img src="resources/icons/send.svg" alt="messages">
-              <span class="nav-text">Messages</span>
-          </a>
-      </nav>
-    </div>
-    <nav class="nav">
-      <a href="#" class="nav-link">
-          <img src="resources/icons/house-door.svg" alt="accueil">
-          <span class="nav-text">Accueil</span>
-      </a>
-      <a href="#" class="nav-link">
-          <img src="resources/icons/search.svg" alt="profil">
-          <span class="material-icons-outlined">Rechercher</span> </a>
-      <a href="#" class="nav-link">
-          <img src="resources/icons/plus-lg.svg" alt="ajouter">
-          <span class="nav-text">Offres d'emploi</span>
-      </a>
-      <a href="#" class="nav-link">
-          <img src="resources/icons/send.svg" alt="messages">
-          <span class="nav-text">Messages</span>
-      </a>
-  </nav>
-   
-    <ul id="hexGrid" class="hexagones">
-        
-      </ul>
-    <!-- Body  -->
+        <ul class="navbar_menu">
+          <li class="nav-link">
+            <a href="#navbar">
+              <img src="resources/icons/house-door.svg" alt="icon_home">
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-link" style="position: relative">
+            <input id="search-trigger" type="checkbox" />
+            <label for="search-trigger">
+              <img src="resources/icons/search.svg" alt="icon_search">
+              <br>
+              <span>Rechercher</span>
+            </label>
+            <div class="search-bar">
+              <!--search start adlan-->
+            <input class="search-input" type="text" placeholder="Rechercher">
+              <!--search end adlan-->
+           </div>
+          </li>
+          <li class="nav-link">
+            <a href="https://wilders.co/">
+              <img src="resources/icons/work.png" alt="job">
+              <span>Offres d'emploi</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <button type="submit" class="btn" onclick="openPopup()">
+                <img src="resources/icons/people.svg" alt="about_us">
+                <span>A propos</span>
+             </button>
+          </li>
+        </ul>
+    </nav>
+  </header>
 
-<footer></footer>
-    
-    <script src="index.js"></script>
+<!--BUTTON POPUP-->
+<div class="popup" id="popup">
+  <div class="titre">
+    <h1>WILD'KEDIN</h1>
+  </div>
+    <div class="text">
+      <p>Un ’réseau social’ professionnel qui affiche un fil de messages de nos collègues de promo Wild Code School Reims 2023</p>
+      <br>
+      <div class="team">
+        <h3 class="team-titre">NOTRE EQUPE</h3>
+        <ul class="team-list">
+          <li class="team-name">
+            <a href="https://www.linkedin.com/in/adlan-khaliev-a2465825a/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <h5> Adlan KHALIEV</h5></a></li>
+          <li class="team-name">
+            <a href="https://www.linkedin.com/in/ni-kadek-rina-wati-04799276/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <h5>Rina WATI</h5></a></li>
+          <li class="team-name">
+            <a href="https://www.linkedin.com/in/christophe-dubois-217452186/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <h5>Christophe DUBOIS</h5></a></li>
+          <li class="team-name">
+            <a href="https://www.linkedin.com/in/flavien-jovic-4348681b2/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <h5>Flavien JOVIC</h5></a></li>
+          <li class="team-name">
+            <a href="https://www.linkedin.com/in/mohamed-berkoussi4900/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <h5>Mohamed BERKOUSSI</h5></a></li>
+        </ul>
+      </div>
+      <button type= "button" onclick="closePopup()">OK</button>
+    </div>
+</div> 
+
+<!--MAIN CONTENT-->
+<main>
+    <ul id="hexGrid" class="hexagones"></ul>
+</main>
+<script src="index.js"></script>
 
 </body>
