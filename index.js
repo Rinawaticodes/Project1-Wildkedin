@@ -1,7 +1,6 @@
 
 /*  Body */
 
-
 //rina popup start
 let popup = document.getElementById("popup");
 
@@ -12,6 +11,7 @@ let popup = document.getElementById("popup");
             popup.classList.remove("open-popup");
         }
 //rina popup end
+
 /*  Button
 
 const buttons = document.getElementsByClassName('compteur');
@@ -52,7 +52,7 @@ const wilderList = [
   ),
   new Wilder(
     "Alexandre Oudin",
-    "j'ai choisi le métier de développeur car c'est un métier que je peux faire avec mes handicaps et que la technologie ma passionne sous tous les angles",
+    "J'ai choisi le métier de développeur car c'est un métier que je peux faire avec mes handicaps et que la technologie ma passionne sous tous les angles.",
     "resources/promoWilder/AlexandreO.jpg",
     "https://github.com/dragowolf51",
     "https://www.linkedin.com/in/alexandre-oudin-b66b98236/",
@@ -75,7 +75,7 @@ const wilderList = [
   ),
   new Wilder(
     "Ahmed El Amri",  
-    "Je compte continuer en alternance, pour continuer à apprendre tout en étant encadré par des dev expérimenter.Avoir une première expérience dans le domaine, et décrocher mon titre.",
+    "Je compte continuer en alternance pour continuer à apprendre tout en étant encadré par des dev expérimenter et avoir une première expérience dans le domaine et décrocher mon titre/",
     "resources/promoWilder/Ahmed.jpeg",
     "https://github.com/kirikouu78130",
     "https://www.linkedin.com/in/ahmed-el-amri-702083263/",
@@ -83,7 +83,7 @@ const wilderList = [
   ),
   new Wilder(
     "Alexandre Pompidou",  
-    " Je veux faire ce métier par passions.",
+    "Je veux faire ce métier par passion.",
     "resources/promoWilder/ALexandreP.jpeg",
     "https://github.com/Alex-5110",
     "https://www.linkedin.com/in/alexandre-pompidou-13a467223/",
@@ -99,7 +99,7 @@ const wilderList = [
   ),
   new Wilder(
     "Aylin Noiret",  
-    "Après la formation, j’aimerai faire une alternance pour peaufiner mes compétences et me perfectionner dans le domaine.e",
+    "Après la formation,j’aimerai faire une alternance pour peaufiner mes compétences et me perfectionner dans le domaine.",
     "resources/promoWilder/Aylin.JPG",
     "https://github.com/Nayxl",
     "https://www.linkedin.com/in/aylin-noiret-5370a6269/",
@@ -115,7 +115,7 @@ const wilderList = [
   ),
   new Wilder(
     "Christophe Dubois",  
-    "J ai choisie le métier de développeur car j'adore utilisé la logique informatique et humaine pour codée des programmes , on apprends des choses nouvelles tout les jours et la réussite de celle ci est très satisfaisante. ",
+    "J'ai choisi le métier de développeur car j'adore utiliser la logique informatique et l'humaine pour codée des programmes, on apprends des choses nouvelles tout les jours et la réussite de celle ci est très satisfaisante.",
     "resources/promoWilder/Christophe.jpg",
     "https://github.com/tetsuya51",
     "https://www.linkedin.com/in/christophe-dubois-217452186/",
@@ -123,7 +123,7 @@ const wilderList = [
   ),
   new Wilder(
     "Elodie Jehl",  
-    "C'est un métier d'avenir, qui permet d'intervenir dans beaucoup de domaines différents. Il permet également de créer des choses à partir de rien, d'améliorer de l'existant et d'aider des populations.",
+    "C'est un métier d'avenir qui permet d'intervenir dans beaucoup de domaines différents. Il permet également de créer des choses à partir de rien, d'améliorer de l'existant et d'aider des populations.",
     "resources/promoWilder/Elodie.png",
     "https://github.com/Elodie0530",
     "",
@@ -131,7 +131,7 @@ const wilderList = [
   ),
   new Wilder(
     "Enzo Andre",  
-    "Mon projet est de demarrer une alternance de 1 an puis trouver un travail pour me lancer dans la vie active",
+    "Mon projet est de demarrer une alternance de 1 an puis trouver un travail pour me lancer dans la vie active.",
     "resources/promoWilder/Enzo.jpg",
     "https://github.com/Enzo-adr5",
     "https://www.linkedin.com/in/enzo-andre-7ba6a7269/",
@@ -139,7 +139,7 @@ const wilderList = [
   ),
   new Wilder(
     "Maximilien Thiry",  
-    "(Pour l'argent Pardi )  C'est un métier que je trouve intéressant ou tu dois te poser des questions sur comment tu peux faire et aussi le pouvoir de Créer.. Aussi pour voyager.",
+    "(Pour l'argent Pardi ) C'est un métier que je trouve intéressant ou tu dois te poser des questions sur comment tu peux faire et aussi le pouvoir de créer..Aussi pour voyager.",
     "resources/promoWilder/Maximilien.jpeg",
     "https://github.com/zeitounmax",
     "https://www.linkedin.com/in/maximilienthiry/",
@@ -155,7 +155,7 @@ const wilderList = [
   ),
   new Wilder(
     "Mohamed Berkoussi",  
-    "J'aime le métier de dév. web car il me permet de créer des projets intéressants et interactifs en utilisant mes compétences en codage, de travailler en équipe avec des autres dév. et de bénéficier de nombreuses opportunités de carrière.",
+    "Ce métier me permet de créer des projets intéressants et interactifs en utilisant mes compétences en codage,de travailler en équipe et de bénéficier de nombreuses opportunités de carrière.",
     "resources/promoWilder/MohamedB.jpg",
     "https://github.com/Mohamed4900",
     "https://www.linkedin.com/in/mohamed-berkoussi4900/",
@@ -179,7 +179,7 @@ const wilderList = [
   ),
   new Wilder(
     "Nils Caqueux",  
-    " J'ai grandi dans l'informatique",
+    "J'ai grandi dans l'informatique",
     "resources/promoWilder/Nils.jpg",
     "https://github.com/OkamiAka",
     "https://www.linkedin.com/in/nils-caqueux-ba0a45233/",
@@ -187,7 +187,7 @@ const wilderList = [
   ),
   new Wilder(
     "Pacôme Barthe",  
-    "J'adore la programmation, j'apprend plein chose et ont peut tout faire",
+    "J'adore la programmation et j'apprend plein chose et ont peut tout faire.",
     "resources/promoWilder/Pacome.jpeg",
     "https://github.com/CrazyEqic",
     "",
@@ -195,7 +195,7 @@ const wilderList = [
   ),
   new Wilder(
     "Ni Kadek Rina Wati",  
-    "Je voudrais travailler dans une entreprise internationale qui me permet de se former dans un cadre diversifié et inclusif et de de comprendre les différentes cultures, coutumes et stéréotypes.",
+    "J'aimerais travailler dans une équipe qui me permet de se former dans un cadre diversifié et inclusif et de de comprendre les différentes cultures et stéréotypes.",
     "resources/promoWilder/Rina.jpeg",
     "https://github.com/Rinawaticodes",
     "https://www.linkedin.com/in/ni-kadek-rina-wati-04799276/",
@@ -203,7 +203,7 @@ const wilderList = [
   ),
   new Wilder(
     "Justine Merlin",  
-    "Je souhaite continuer de travailler avec des personnes passionnantes !",
+    "Je souhaite continuer de travailler avec des personnes passionnantes!",
     "resources/promoWilder/Justine.jpeg",
     "https://github.com/Justine-Merlin",
     "https://www.linkedin.com/in/justine-merlin-developer/",
@@ -211,11 +211,10 @@ const wilderList = [
   ),
   new Wilder(
     "Romain Guillemot",  
-    "Ça s'est passé un peu par hasard, mais je me suis senti bien dans ce métier, et je continue d'apprendre tous les jours",
+    "Ça s'est passé un peu par hasard, mais je me suis senti bien dans ce métier, et je continue d'apprendre tous les jours.",
     "resources/promoWilder/Romain.jpeg",
     "https://github.com/rocambille",
     "https://www.linkedin.com/in/rguillemot/",
-  
   ),
 ];
 
@@ -235,8 +234,8 @@ function createHexagone(wilder) {
           <h1>${wilder.name} <img src=${wilder.img} alt="" /></h1>
           <p>${wilder.desc}</p>
           <div class="favIcon">
-            <a href="${wilder.git}"><i class="fa-brands fa-github"></i></a>
-            <a href="${wilder.link}"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="${wilder.git}" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="${wilder.link}" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
       </details>
@@ -244,6 +243,7 @@ function createHexagone(wilder) {
   `;
 }
 
+/***** Fuction de looping Hexagone ********/
 function createAllHexagones(filter) {
 
   wilderList.sort((a, b) => 0.5-Math.random()) ;
@@ -254,11 +254,10 @@ function createAllHexagones(filter) {
       hexagones += createHexagone(wilderList[i]);
     }
   }
-
   return hexagones;
 }
 
-// adlan search start
+// Function search dans la bar de rechercher (Adlan start)
 
 document.querySelector(".search-input")?.addEventListener("change", () => {
   const filter = document.querySelector(".search-input").value;
