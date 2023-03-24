@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   z-index: 800;
-  border: 2px solid #787777;
+  border-top: 1px solid #787777;
 }
 .navbar_logo {
   position: fixed;
@@ -42,7 +42,7 @@
   align-items: center;
   font-weight: 600;
   background-color:white;
-  border: 2px solid #787777;
+  border-bottom: 1px solid #787777;
 }
 .navbar_logo img{
   width: 4rem;
@@ -74,12 +74,12 @@
 }
 .navbar_menu .nav-link img {
   text-align: center;
-  width: 2rem;
+  width: 1.4rem;
 }
 span{
   color: #bf4904;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 .navbar .navbar_menu .nav-link:hover {
   border-bottom: 0.3rem solid #f37335;
@@ -118,7 +118,7 @@ span{
 .popup{
   width: 300px;
   height: 150vw;
-  background:#F37335;
+  background:#f0dfd6;
   position: absolute;
   top:50%;
   left: 50%;
@@ -137,7 +137,7 @@ span{
 .popup .titre{
   height: 70px;
   background: white;
-  border-bottom: 2px solid #444241;
+  border-bottom: 1px solid #787777;
 }
 .popup .titre h1{
   padding: 20px 20px;
@@ -163,6 +163,9 @@ span{
 .team-list .team-name a{
   text-decoration: none;
   color:rgb(48, 47, 47);
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 .team-name a i{
   display: flex;
@@ -191,6 +194,7 @@ span{
     top: 0;
     justify-content: space-around;
     padding: 1em 0;
+    border-bottom: 1px solid #787777;
     /* height: 4rem; */
   }
   .navbar_logo {
@@ -208,10 +212,15 @@ span{
     flex-direction: row;
     justify-content: space-around;
     font-size: 16px;
+    
+  }
+  .team .team-list a {
+    display: flex;
+    flex-direction: column-reverse;
   }
   .popup{
     width: 600px;
-    height: 360px;
+    height: auto;
   }
   .popup button{
     width: 30%;
@@ -299,9 +308,9 @@ main{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 250px;
-    height: 250px;
+    height: auto;
     background: #fff;
-    position: absolute;
+    position: fixed;
     border-radius: 10px;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     z-index: 100;
@@ -381,7 +390,7 @@ main{
 /*** HEXAGON SIZING AND EVEN ROW INDENTATION *****************************************************************/
 @media (min-width:1201px) { /* <- 5-4  hexagons per row */
   #hexGrid{
-    padding-bottom: 4.4%
+    padding-bottom: 8rem
   }
   .hex {
     width: 20%; /* = 100 / 5 */
@@ -392,7 +401,7 @@ main{
   .modal-content {
     margin-top: 60px;
       width: 250px;
-      height: 320px;
+      height: auto;
   }
   /* Icon around */
   .favIcon {
@@ -429,7 +438,7 @@ main{
 
 @media (max-width: 600px) { /* <- 2-1  hexagons per row */
   #hexGrid{
-    padding-bottom: 11.2%
+    padding-bottom: 8rem;
   }
   .hex {
     width: 50%; /* = 100 / 3 */
@@ -446,7 +455,7 @@ main{
     .modal-content {
       /*position pas sure absolute ou relative */
         width: 250px;
-        height: 300px;   
+        height: auto;   
     }
     .favIcon a i{
       padding: 0 20px;
